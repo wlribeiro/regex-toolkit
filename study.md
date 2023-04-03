@@ -49,3 +49,13 @@ pegar somente texto em um lista
 ```
 [^\|]([A-Za-z\s]+)[^\|]
 ```
+
+pegar tudo a partir de um valor especifico:
+palavras começadas com letras maiusculas e caracteres especiais
+```
+(?:letras).*
+
+(?:letras).(maiusculas).*
+palavras começadas com letras maiusculas e caracteres especiais
+palavras começadas com letras minusculas e caracteres especiais
+```
