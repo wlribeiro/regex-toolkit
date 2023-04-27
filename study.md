@@ -59,3 +59,11 @@ palavras começadas com letras maiusculas e caracteres especiais
 palavras começadas com letras maiusculas e caracteres especiais
 palavras começadas com letras minusculas e caracteres especiais
 ```
+
+pega somente o valor entre p= e |
+( http://nfe.sefaz.ba.gov.br/servicos/nfce/qrcode.aspx?p=29230310854145000456650150000211061604302752|2|1|1|98ED7722474CFC0E93CE5A791E20245E52C75FB8 )
+```python
+(?:p=\d.+?)(?=\|)
+# ignora o p= para que não seja retornado na resposta
+(?<=p=)\d.+?(?=\|)
+```
